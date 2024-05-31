@@ -16,7 +16,7 @@ const Home = () => {
 		setDescription('');
 	}
 
-	function handlePackedItem(id){
+	function handleFinishedTask(id){
 		setTasks((tasks) =>
 			tasks.map((task) =>
 			  task.id === id ? { ...task, finished: ! task.finished } : task
@@ -25,7 +25,6 @@ const Home = () => {
 	}
 
 	function handleDeleteTask(id){
-		console.log('inside delete')
 		setTasks((tasks) => tasks.filter((task => task.id !== id)));
 	}
 
@@ -40,7 +39,7 @@ const Home = () => {
         onChange={(e) => setDescription(e.target.value)}
       ></input>
 			</form>
-			<TaskList tasks={tasks} onPackedItem={handlePackedItem} onDeleteTask={handleDeleteTask}></TaskList>
+			<TaskList tasks={tasks} onFinishedTask={handleFinishedTask} onDeleteTask={handleDeleteTask}></TaskList>
 			</div>
 	);
 };

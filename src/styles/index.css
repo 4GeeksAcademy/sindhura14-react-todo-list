@@ -34,7 +34,10 @@
     vertical-align: middle;
 }
 
-input { outline: none; }
+input { 
+    outline: none;
+    vertical-align: middle;
+}
 
 .hide {
     display: none;
@@ -44,3 +47,17 @@ input { outline: none; }
     display: inline-block;
   }
 
+
+  .cormorant-font {
+    font-family: "Cormorant", serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+  }
+
+  .input,.list-group-item {
+    font-family: "Cormorant", serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+  }

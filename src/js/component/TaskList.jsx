@@ -2,7 +2,7 @@ import React from "react";
 import Task from "./Task";
 import Stats from "./Stats";
 
-export default function TaskList({tasks, onPackedItem, onDeleteTask}) {
+export default function TaskList({tasks, onFinishedTask, onDeleteTask}) {
     return (
         <div className="list">
         {
@@ -12,7 +12,7 @@ export default function TaskList({tasks, onPackedItem, onDeleteTask}) {
                 <Task
                   task={task}
                   key={task.id}
-                  onPackedItem={onPackedItem}
+                  onFinishedTask={onFinishedTask}
                   onDeleteTask={onDeleteTask}
                 ></Task>
               );
