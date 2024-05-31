@@ -10,3 +10,37 @@
     import 'relative/path/to/stylesheet.scss';
 
 */
+.innerContainer {
+    border: solid  0.1rem lightgrey;
+    width: fit-content;
+    border-radius: 0.37rem;
+}
+.input{
+    height:3rem;
+    width:20rem;
+    border:0;
+    border-bottom: solid 0.1rem lightgrey;
+    padding: 0 0.7rem;
+}
+
+.list-group-item{
+    border:0;
+    border-bottom: solid 0.1rem lightgrey;
+    border-radius: revert;
+}
+
+.list-group-item span{
+    padding-left: 0.5rem;
+    vertical-align: middle;
+}
+
+input { outline: none; }
+
+.hide {
+    display: none;
+}
+
+.list-group-item:hover .hide {
+    display: inline-block;
+  }
+
